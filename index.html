@@ -4,75 +4,136 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meeting Minutes 04/13/2023</title>
+  <!-- Favicon -->
+  <link rel="icon" href="./res/favicon.png" type="image/png" sizes="16x16">
 </head>
 <body>
-  <section>
+  <header>
     <h1>Money making meeting</h1>  
     <h2>- Money in the making</h2>  
-    <h3>04/13/2023</h3>
+    <h3><i>04/13/2023</i></h3>
+  </header>
 
-    <h3>Attendance List</h3>
+  <nav class="nav-links">
     <ul>
-      <li>Mark Lucernas</li>
-      <li>Hieu Pham</li>
-      <li>Darren Yu</li>
-      <li>Runhui Wang</li>
-      <li>Xinle Yu</li>
-      <li>Anthony Yao</li>
-      <li>Yue(Steve) Yin</li>
-      <li>Holly Zhu</li>
-      <li>Aaron Kann</li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
-  </section>
+  </nav>
 
   <hr>
 
-  <section>
-    <h3>Today's Agenda: How can we generate more cashflow?</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-    </p>
-  </section>
+  <div>
+    <details>
+      <summary
+        <b>Attendance List</b>
+      </summary>
+      <ul>
+        <li>Mark Lucernas</li>
+        <li>Hieu Pham</li>
+        <li>Darren Yu</li>
+        <li>Runhui Wang</li>
+        <li>Xinle Yu</li>
+        <li>Anthony Yao</li>
+        <li>Yue(Steve) Yin</li>
+        <li>Holly Zhu</li>
+        <li>Aaron Kann</li>
+      </ul>
+    </details>
 
-  <section>
-    <h3>Unfinished Bizz</h3>
-    <ol>
-      <li>Need to buy meditation pods</li>
-      <li>Buy new shiny equipments</li>
-      <li>Need more gratitude</li>
-    </ol>
-  </section>
+    <br>
 
-  <section>
-    <h3>New Bizz</h3>
-    <ol>
-      <li>Install more RAM</li>
-      <li>Get more productivity</li>
-      <li>Make more money</li>
-    </ol>
-  </section>
+    <form>
+      <label for="meetingType">Meeting Type:</label>
+      <input list="meetings" id="meetingType" name="meetingType" />
+      <datalist id="meetings">
+        <option value="General"></option>
+        <option value="Backend"></option>
+        <option value="Frontend"></option>
+        <option value="Design"></option>
+        <option value="Planning"></option>
+      </datalist>
+    </form>
+  </div>
 
-  <section>
-    <h3>Commnets/Questions/Concerns</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-    </p>
-  </section>
+  <main>
+    <section>
+      <h3>Today's Agenda: How can we generate more cashflow?</h3>
+      <details>
+        <summary>Lorem ipsum</summary>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam<br>
 
-  <section>
-    <h3>Meeting Resources</h3>
-    <h4>Images</h4>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit
+        </p>
+      </details>
+    </section>
 
-    <h4>Recordings</h4>
-    <audio controls>
-      <source src="[[Insert the path to the audio file]]" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-    <video controls>
-      <source src="[[Insert the path to the video file]]" type="video/mp4">
-      Your browser does not support the video element.
-    </video>
-  </section>
+    <section>
+      <h3>Unfinished Bizz</h3>
+      <ol>
+        <li>Need to buy <em>meditation pods</em></li>
+        <li>Buy new shiny equipments</li>
+        <li>Need more <b>gratitude!</b></li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>New Bizz</h3>
+      <ol>
+        <li>Install more RAM</li>
+        <li>Get more productivity</li>
+        <li>Make more <strong>money</strong></li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Meeting Resources</h3>
+      <h4>Images</h4>
+
+      <h4>Recordings</h4>
+      <audio controls>
+        <source src="[[Insert the path to the audio file]]" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <video controls>
+        <source src="[[Insert the path to the video file]]" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </section>
+
+    <section>
+      <h3>Comments/Questions/Concerns</h3>
+      <form>
+        <fieldset id="comments">
+          <legend>Comments</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your name..">
+          <label for="comment">Comment:</label>
+          <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
+          <select id="commentList" name="commentList">
+            <option value="">---</option>
+            <option value="Very Happy">Very Happy</option>
+            <option value="Meh">Meh</option>
+            <option value="Expressing anger">Expressing Anger</option>
+          </select>
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>Meeting Minutes <i>04/13/2023</i></p>
+  </footer>
 
 </body>
 </html>
