@@ -1,8 +1,5 @@
 Fill in the passphrases here.
 
-
-Question passphrases
-
 1. greenEggsAndHam
 2. iHateCplusplus
 3. HTMLRocks
