@@ -2,7 +2,7 @@
 name: Lab 3 Task
 about: Custom issue template for Lab 3 Tasks
 title: "[LAB]"
-labels: ''
+labels: lab todo
 assignees: marklcrns
 
 ---
