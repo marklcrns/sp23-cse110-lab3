@@ -6,66 +6,62 @@
   <title>Meeting Minutes 04/13/2023</title>
   <!-- Favicon -->
   <link rel="icon" href="./assets/favicon.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Money making meeting</h1>
-    <h2>- Money in the making</h2>
-    <h3><i>04/13/2023</i></h3>
-  </header>
-
-  <nav class="nav-links">
+  <nav id="nav-links">
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a class="" href="#">About</a></li>
+      <li><a class="disabled" href="#">Contact</a></li>
     </ul>
   </nav>
 
+  <header class="page-header">
+    <h1 class="text-uppercase text-center">Money making meeting</h1>
+    <h2 class="text-muted text-center">Money in the making</h2>
+    <h4 class="text-right"><i>04/13/2023</i></h4>
+  </header>
+
+  <h3>Attendance List</h3>
+  <ul class="text-center bg-success list-inline">
+    <li>Mark Lucernas</li>
+    <li>Hieu Pham</li>
+    <li>Darren Yu</li>
+    <li>Runhui Wang</li>
+    <li>Xinle Yu</li>
+    <li>Anthony Yao</li>
+    <li>Yue(Steve) Yin</li>
+    <li>Holly Zhu</li>
+    <li>Aaron Kann</li>
+  </ul>
+
+  <br>
+
+  <form>
+    <label for="meetingType">Meeting Type:</label>
+    <input list="meetings" id="meetingType" name="meetingType">
+    <datalist id="meetings">
+      <option value="General"></option>
+      <option value="Backend"></option>
+      <option value="Frontend"></option>
+      <option value="Design"></option>
+      <option value="Planning"></option>
+    </datalist>
+  </form>
+
   <hr>
 
-  <div>
-    <details>
-      <summary>
-        <b>Attendance List</b>
-      </summary>
-      <ul>
-        <li>Mark Lucernas</li>
-        <li>Hieu Pham</li>
-        <li>Darren Yu</li>
-        <li>Runhui Wang</li>
-        <li>Xinle Yu</li>
-        <li>Anthony Yao</li>
-        <li>Yue(Steve) Yin</li>
-        <li>Holly Zhu</li>
-        <li>Aaron Kann</li>
-      </ul>
-    </details>
-
-    <br>
-
-    <form>
-      <label for="meetingType">Meeting Type:</label>
-      <input list="meetings" id="meetingType" name="meetingType">
-      <datalist id="meetings">
-        <option value="General"></option>
-        <option value="Backend"></option>
-        <option value="Frontend"></option>
-        <option value="Design"></option>
-        <option value="Planning"></option>
-      </datalist>
-    </form>
-  </div>
-
-  <main>
+  <main class="container">
     <section>
       <h3>Today's Agenda: How can we generate more cashflow?</h3>
       <details>
         <summary>Lorem ipsum</summary>
-        <p>
+        <p class="lead">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam<br>
-
+        </p>
+        <p>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
@@ -75,30 +71,58 @@
       </details>
     </section>
 
-    <section>
+    <section class="text-danger">
       <h3>Unfinished Bizz</h3>
-      <ol>
-        <li>Need to buy <em>meditation pods</em></li>
-        <li>Buy new shiny equipments</li>
-        <li>Need more <b>gratitude!</b></li>
+      <ol class="list-money">
+        <li class="text-relative-1">Need to buy <em>meditation pods</em></li>
+        <li class="text-relative-2">Buy new shiny equipments</li>
+        <li class="text-relative-3">Need more <b>gratitude!</b></li>
       </ol>
     </section>
 
-    <section>
+    <section class="text-info">
       <h3>New Bizz</h3>
-      <ol>
-        <li>Install more RAM</li>
-        <li>Get more productivity</li>
-        <li>Make more <strong>money</strong></li>
+      <ol class="list-money">
+        <li class="text-absolute-1">Install more RAM</li>
+        <li class="text-absolute-2">Get more productivity</li>
+        <li class="text-absolute-3">Make more <strong>money</strong></li>
       </ol>
     </section>
 
     <section>
       <h3>Meeting Resources</h3>
       <h4>Image</h4>
-      <img src="./assets/sample_image.jpg" alt="Sample Image" width="500">
+      <div class="container-flex">
+        <div class="img-thumbnail">
+          <img class="img-rounded" src="./assets/sample_image.jpg" alt="Sample Image" width="500">
+        </div>
+        <div class="img-thumbnail">
+          <img class="img-rounded" src="./assets/sample_image.jpg" alt="Sample Image" width="500">
+        </div>
+        <div class="img-thumbnail">
+          <img class="img-rounded" src="./assets/sample_image.jpg" alt="Sample Image" width="500">
+        </div>
+        <div class="img-thumbnail">
+          <img class="img-rounded" src="./assets/sample_image.jpg" alt="Sample Image" width="500">
+        </div>
+      </div>
 
-      <h4>Recordings</h4>
+      <div class="container-grid">
+        <div class="img-thumbnail">
+          <img class="img-circle" src="./assets/sample_image.jpg" alt="Sample Image" width="500">
+        </div>
+        <div class="img-thumbnail">
+          <img class="img-circle" src="./assets/sample_image.jpg" alt="Sample Image" width="500">
+        </div>
+        <div class="img-thumbnail">
+          <img class="img-circle" src="./assets/sample_image.jpg" alt="Sample Image" width="500">
+        </div>
+        <div class="img-thumbnail">
+          <img class="img-circle" src="./assets/sample_image.jpg" alt="Sample Image" width="500">
+        </div>
+      </div>
+
+      <h3>Recordings</h3>
       <video controls width="500">
         <source src="./assets/sample_video.webm" type="video/mp4">
         Your browser does not support the video element.
@@ -112,20 +136,25 @@
     <section>
       <h3>Comments/Questions/Concerns</h3>
       <form>
-        <fieldset id="comments">
-          <legend>Comments</legend>
+        <fieldset>
+          <legend>Info</legend>
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" placeholder="Your name..">
           <label for="comment">Comment:</label>
-          <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
-          <select id="commentList" name="commentList">
+          <select name="commentList">
             <option value="">---</option>
             <option value="Very Happy">Very Happy</option>
             <option value="Meh">Meh</option>
             <option value="Expressing anger">Expressing Anger</option>
           </select>
-          <button type="submit">Submit</button>
         </fieldset>
+
+        <fieldset>
+          <legend>Comments</legend>
+          <textarea name="comment" placeholder="Write something.." style="height:200px"></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
       </form>
     </section>
   </main>
